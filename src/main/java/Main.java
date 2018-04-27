@@ -90,7 +90,6 @@ public class Main {
 
     public static void save(String filename, ToDoList data) throws IOException {
         Gson gson = new Gson();
-        String json = gson.toJson(data);
         FileWriter writer = new FileWriter(filename);
         try {
             gson.toJson(data, writer);
